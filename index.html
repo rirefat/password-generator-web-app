@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator: Web App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="inputBox">
+        <i class="fa-solid fa-fingerprint"></i>
         <h2>Random Password Generator App</h2>
-        <input type="text" placeholder="Create Password" id="password" readonly="">
-        <div id="btn" onclick="getPassword()">Generate Password</div>
-        <div id="clear_btn" onclick="clearPassword()">Clear</div>
+        <div class="password-area">
+            <input type="text" placeholder="Create Password" id="password" readonly="">
+            <i class="fa-solid fa-copy" title="Copy to clipboard"></i>
+        </div>
+        <div id="btn" onclick="getPassword()"><i class="fa-brands fa-creative-commons-sampling"></i> Generate Password</div>
+        <div id="clear_btn" onclick="clearPassword()"><i class="fa-solid fa-eraser"></i> Clear</div>
     </div>
 
     <script src="./script.js"></script>
