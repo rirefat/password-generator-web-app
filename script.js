@@ -10,3 +10,7 @@ const getPassword=()=>{
 
     document.getElementById("password").value = password;
 }
+
+const clearPassword =()=>{
+    document.getElementById("password").value = "";
+}
