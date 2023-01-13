@@ -16,6 +16,7 @@ const getPassword=()=>{
 // Clear Generated Password
 const clearPassword =()=>{
     document.getElementById("password").value = "";
+    document.getElementById("digit_number").value = "";
 }
 
 // Copy Generated Password
