@@ -21,8 +21,8 @@ const clearPassword =()=>{
 
 // Copy Generated Password
 const copyPassword =()=>{
-    // let input = document.getElementById("password");
-    // input.select();
-    // document.execCommand("copy");
+    let input = document.getElementById("password");
+    input.select();
+    document.execCommand("copy");
 
 }
