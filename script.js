@@ -1,7 +1,8 @@
 // Generating Password
 const getPassword=()=>{
     let chars = "0123456789zxcvbnmlkjhgfdsaqwertyuiopQWERTYUIOPLKJHGFDSAZXCVBNM!@#$%^&*()_+?><:{}[]";
-    let passwordLength = 16;
+    let passwordLength = document.getElementById("digit_number").value - 1;
+    console.log(passwordLength)
     let password ="";
 
     for(let i = 0; i<=passwordLength; i++){
