@@ -22,10 +22,19 @@ body .inputBox .fa-fingerprint {
   text-align: center;
   margin-bottom: 20px;
   font-size: 55px;
+  transition: 0.5s;
+}
+body .inputBox .fa-fingerprint:hover {
+  color: #6055f6;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 body .inputBox h2 {
   font-size: 28px;
   color: #333;
+}
+body .inputBox #digit_number {
+  width: 98% !important;
 }
 body .inputBox .password-area {
   display: flex;
@@ -86,4 +95,12 @@ body .inputBox #clear_btn {
 }
 body .inputBox #clear_btn:active {
   background: #a29bfe;
+}
+body footer {
+  position: absolute !important;
+  bottom: 2% !important;
+}
+body footer a {
+  text-decoration: none;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

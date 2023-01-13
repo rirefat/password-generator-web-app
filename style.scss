@@ -22,7 +22,14 @@ body{
             text-align: center;
             margin-bottom: 20px;
             font-size: 55px;
-        }
+            transition: 0.5s;
+
+            &:hover{
+                color: #6055f6;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }        
 
         h2{
             font-size: 28px;
@@ -30,7 +37,7 @@ body{
         }
 
         #digit_number{
-            width: 50% !important;
+            width: 98% !important;
         }
 
         .password-area{
@@ -103,6 +110,16 @@ body{
             &:active{
                 background: #a29bfe;
             }
+        }
+    }
+
+    footer{
+        position: absolute !important;
+        bottom: 2% !important;
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
         }
     }
 }
