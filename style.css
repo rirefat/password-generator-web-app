@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: consolas;
   user-select: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,7 +26,7 @@ body .inputBox .fa-fingerprint {
   transition: 0.5s;
 }
 body .inputBox .fa-fingerprint:hover {
-  color: #6055f6;
+  color: #0074cf;
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -35,6 +36,52 @@ body .inputBox h2 {
 }
 body .inputBox #digit_number {
   width: 98% !important;
+}
+body .inputBox .range_box {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  width: fit-content;
+  box-shadow: -4px -4px 10px rgb(255, 255, 255), inset 4px 4px 10px rgba(0, 0, 0, 0.05), inset -4px -4px 10px rgb(255, 255, 255), 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+body .inputBox .range_box #range {
+  cursor: pointer;
+  width: 400px;
+  height: 15px;
+  appearance: none;
+  background: #edf1f4;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff, inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+body .inputBox .range_box #range::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #0074cf;
+  box-shadow: -407px 0 0 400px #27a0ff;
+}
+body .inputBox .range_box #range_value {
+  position: absolute;
+  top: 56%;
+  left: 35%;
+  text-align: center;
+  width: 60px;
+  font-size: 1.25em;
+  color: #fff;
+  background-color: #27a0ff;
+  margin-left: 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff, inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.25);
+}
+body .inputBox .range_box p {
+  margin-top: 15px;
 }
 body .inputBox .password-area {
   display: flex;
@@ -51,7 +98,7 @@ body .inputBox .password-area .fa-copy {
 body .inputBox .password-area .fa-copy:hover {
   opacity: 1;
 }
-body .inputBox input {
+body .inputBox input:not(#range) {
   position: relative;
   width: 100%;
   height: 60px;
@@ -67,7 +114,7 @@ body .inputBox input {
   color: #333;
   box-shadow: -4px -4px 10px rgb(255, 255, 255), inset 4px 4px 10px rgba(0, 0, 0, 0.05), inset -4px -4px 10px rgb(255, 255, 255), 4px 4px 10px rgba(0, 0, 0, 0.05);
 }
-body .inputBox input::placeholder {
+body .inputBox input:not(#range)::placeholder {
   letter-spacing: 0;
 }
 body .inputBox #btn {
@@ -81,7 +128,7 @@ body .inputBox #btn {
   border-radius: 8px;
 }
 body .inputBox #btn:active {
-  background: #a29bfe;
+  background: #0074cf;
 }
 body .inputBox #clear_btn {
   position: relative;
@@ -95,7 +142,7 @@ body .inputBox #clear_btn {
   border-radius: 8px;
 }
 body .inputBox #clear_btn:active {
-  background: #a29bfe;
+  background: #0074cf;
 }
 body .inputBox a {
   text-decoration: none;

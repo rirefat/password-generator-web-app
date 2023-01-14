@@ -15,10 +15,18 @@
     <div class="inputBox">
         <i class="fa-solid fa-fingerprint"></i>
         <h2>Random Password Generator App</h2>
-        <input type="number" placeholder="Input password length" id="digit_number" required>
+        <!-- <input type="number" placeholder="Input password length" id="digit_number" required> -->
+        
         <div class="password-area">
             <input type="text" placeholder="Created Password" id="password" readonly="">
             <i class="fa-solid fa-copy" title="Copy to clipboard" onclick="copyPassword()"></i>
+        </div>
+        <div class="range_box">
+            <div class="range-area">
+                <input type="range" name="" id="range" value="0" min="0" max="50" onmousemove="changeRange(this.value)">
+                <p>Password Length</p>
+            </div>
+            <span id="range_value">0</span>
         </div>
         <div id="btn" onclick="getPassword()"><i class="fa-brands fa-creative-commons-sampling"></i> Generate Password</div>
         <div id="clear_btn" onclick="clearPassword()"><i class="fa-solid fa-eraser"></i> Clear</div>
