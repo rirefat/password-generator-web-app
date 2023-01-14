@@ -24,5 +24,5 @@ const copyPassword =()=>{
     let input = document.getElementById("password");
     input.select();
     document.execCommand("copy");
-
+    alert("Password Copied");
 }

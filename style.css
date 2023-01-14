@@ -46,9 +46,10 @@ body .inputBox .password-area .fa-copy {
   font-size: 28px;
   cursor: pointer;
   color: #333;
+  opacity: 0.5;
 }
 body .inputBox .password-area .fa-copy:hover {
-  color: #6055f6;
+  opacity: 1;
 }
 body .inputBox input {
   position: relative;
@@ -95,6 +96,15 @@ body .inputBox #clear_btn {
 }
 body .inputBox #clear_btn:active {
   background: #a29bfe;
+}
+body .inputBox a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  margin-top: 3%;
+}
+body .inputBox a:hover {
+  color: #6055f6;
 }
 body footer {
   position: absolute !important;

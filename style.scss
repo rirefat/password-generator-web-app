@@ -50,9 +50,11 @@ body{
                 font-size: 28px;
                 cursor: pointer;
                 color: #333;
+                opacity: 0.5;
 
                 &:hover{
-                    color: #6055f6;
+                    // color: #6055f6;
+                    opacity: 1;
                 }
             }
         }
@@ -109,6 +111,17 @@ body{
 
             &:active{
                 background: #a29bfe;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+            margin-top: 3%;
+
+            &:hover{
+                color: #6055f6;
             }
         }
     }
